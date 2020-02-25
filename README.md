@@ -62,5 +62,5 @@ mosquito_sub -h localhost -t info
 
 fire up a termnial and publish to "/info" topic
 ```
-mosquito_pub -h localhost -t info
+mosquito_pub -h localhost -t info -m "test from shell"
 ```
