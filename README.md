@@ -1,6 +1,14 @@
-# maubot-mqtt-hbmqtt
+# mqtt-hbmqtt
 
-A [maubot](https://github.com/maubot/maubot) plugin to publish/subscribe mqtt messages to a MQTT broker (using [hbmqtt](https://hbmqtt.readthedocs.io/en/latest/) library as client)
+A [maubot](https://github.com/maubot/maubot) plugin to publish/subscribe mqtt messages to a MQTT broker using [hbmqtt](https://hbmqtt.readthedocs.io/en/latest/) library as client
+
+
+## (OPTIONAL) Install Mosquitto Broker and client tools
+
+```
+sudo apt-get update
+sudo apt-get install mosquitto mosquitto-clients
+```
 
 ## install python mqtt client library
 
@@ -10,12 +18,22 @@ pip install hbmqtt
 python -m maubot
 ```
 
-## Install Mosquitto Broker
+## install the bot
+
+change in your maubot virtual environment  
+
+clone this repo  
 
 ```
-sudo apt-get update
-sudo apt-get install mosquitto mosquitto-clients
+mbc login
 ```
+
+```
+mbc build --upload ./mqtt-hbmqtt
+```
+
+make a instance in maubot gui  
+
 
 ## publish to the a topic (from your bot)
 
@@ -33,14 +51,14 @@ type in your chat window
 
 ## test from "outside"
 
-### listening to what you type in your bot
+### listening to a topic (from a shell)
 
 fire up a termnial and subscribe to the "/info" topic
 ```
 mosquito_sub -h localhost -t info
 ```
 
-### publish to bot
+### publish to bot (from a shell)
 
 fire up a termnial and publish to "/info" topic
 ```
