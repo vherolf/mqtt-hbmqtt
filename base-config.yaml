@@ -1,4 +1,5 @@
-# MQTT Server settings
+# MQTT Server setting 
+## hostname is "localhost" if you follow install instructions
 mqttserver:
     hostname: mediabox
     port: 1883
