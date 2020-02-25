@@ -54,7 +54,7 @@ class MqttBot(Plugin):
         await self.C.publish(topic, message.encode() )
         await evt.respond("published " + message + " to topic " + topic)
 
-    @command.new("subscibe", aliases=["sub"], help="subscribe to a mqtt topic")
+    @command.new("subscribe", aliases=["sub"], help="subscribe to a mqtt topic")
     @command.argument("topic", pass_raw=True)
     async def sub_handler(self, evt: MessageEvent, topic: str) -> None:
         await self.C.subscribe([
