@@ -1,0 +1,17 @@
+# MQTT Server settings
+mqttserver:
+    hostname: mediabox
+    port: 1883
+
+default_channel: /light
+
+light_on:
+    channel: /light/on
+    message: on
+light_off:
+    channel: /light/off
+    message: off
+
+# subscribe to all mqtt topics 
+# You have to subscribe once to some channel than you subscribed to all (this is just a testing thing)
+subscribe_all: false
