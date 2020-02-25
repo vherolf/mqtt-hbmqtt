@@ -20,9 +20,9 @@ python -m maubot
 
 ## install the bot
 
-change in your maubot virtual environment  
+clone this repo 
 
-clone this repo  
+In our virtualenv for maubot  
 
 ```
 mbc login
