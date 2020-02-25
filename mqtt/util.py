@@ -21,8 +21,6 @@ from mautrix.types import RoomID
 from maubot import MessageEvent
 from maubot.handlers.command import Argument
         
-import paho.mqtt.client as mqtt
-
 if TYPE_CHECKING:
     from .bot import MqttBot
 
