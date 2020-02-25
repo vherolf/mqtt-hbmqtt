@@ -34,6 +34,12 @@ mbc build --upload ./mqtt-hbmqtt
 
 make a instance in maubot gui  
 
+## subscribe to a topic (from your bot)
+
+type in your chat window
+```
+!sub info
+```
 
 ## publish to the a topic (from your bot)
 
@@ -42,23 +48,16 @@ type in your chat window
 !pub info Hello World
 ```
 
-## subscribe to a topic (from your bot)
-
-type in your chat window
-```
-!sub info
-```
-
 ## test from "outside"
 
-### listening to a topic (from a shell)
+### subscribe to a topic (from a shell)
 
 fire up a termnial and subscribe to the "/info" topic
 ```
 mosquito_sub -h localhost -t info
 ```
 
-### publish to bot (from a shell)
+### publish to a topic (from a shell)
 
 fire up a termnial and publish to "/info" topic
 ```
