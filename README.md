@@ -19,7 +19,7 @@ sudo apt-get install mosquitto mosquitto-clients
 
 ## install python mqtt client library
 
-in you virtualenv install hqmtt 
+Activate your virtualenv and install hqmtt 
 ```
 pip install hbmqtt
 python -m maubot
@@ -30,10 +30,8 @@ python -m maubot
 clone this repo
 
 ```
-cd mqtt-hbmqtt 
+git clone https://github.com/vherolf/mqtt-hbmqtt.git
 ```
-
-Change in our virtualenv for maubot  
 
 ```
 mbc login
