@@ -20,9 +20,13 @@ python -m maubot
 
 ## install the bot
 
-clone this repo 
+clone this repo
 
-In our virtualenv for maubot  
+```
+cd mqtt-hbmqtt 
+```
+
+Change in our virtualenv for maubot  
 
 ```
 mbc login
