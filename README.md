@@ -3,7 +3,7 @@
 A [maubot](https://github.com/maubot/maubot) plugin to publish/subscribe mqtt messages to a MQTT broker using [hbmqtt](https://hbmqtt.readthedocs.io/en/latest/) library as client
 
 
-## (Optional) How to make a virtualenv for maubot (optional)
+## (Optional) How to make a virtualenv for maubot
 ```
 mkdir maubot && cd maubot
 python3 -m venv .
