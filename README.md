@@ -3,9 +3,9 @@
 A [maubot](https://github.com/maubot/maubot) plugin to publish/subscribe mqtt messages to a MQTT broker using [hbmqtt](https://hbmqtt.readthedocs.io/en/latest/) library as client
 
 
-## (Optional) make a virtualenv for maubot (optional)
+## (Optional) How to make a virtualenv for maubot (optional)
 ```
-mkdir mqtt-hbmqtt && cd mqtt-hbmqtt
+mkdir maubot && cd maubot
 python3 -m venv .
 source bin/activate
 ```
@@ -19,7 +19,7 @@ sudo apt-get install mosquitto mosquitto-clients
 
 ## install python mqtt client library
 
-Activate your virtualenv and install hqmtt 
+(If not done yet) Activate your virtualenv and install hqmtt 
 ```
 pip install hbmqtt
 python -m maubot
@@ -28,7 +28,6 @@ python -m maubot
 ## install the bot
 
 clone this repo
-
 ```
 git clone https://github.com/vherolf/mqtt-hbmqtt.git
 ```
